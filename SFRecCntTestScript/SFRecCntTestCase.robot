@@ -17,9 +17,9 @@ Entering a Contacts
     ClickText           All Contacts
     UseTable            //table[@class\='slds-table forceRecordLayout slds-table--header-fixed slds-table--edit slds-table--bordered resizable-cols slds-table--resizable-cols uiVirtualDataTable']
     #TypeText            Search this list...         jai\n     delay=2s
-    Sleep               40s
-    ${ContactCount}=    GetTableRow                 //last    skip_header=True    delay=50s
-    Sleep              10s
+    Sleep               120s
+    ${ContactCount}=    GetTableRow                 //last    skip_header=True    delay=90s
+    Sleep              60s
     Log                 Contacts Records Cout is : ${ContactCount}
     # End creation of contacts
 
