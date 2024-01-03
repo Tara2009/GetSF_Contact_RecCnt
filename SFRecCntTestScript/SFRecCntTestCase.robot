@@ -13,6 +13,11 @@ Entering a Contacts
     Appstate               Home
     LaunchApp              Sales
     ClickText              Contacts
+    ClickText              Select a List View: Contacts
+    ClickText              All Contacts
     
 
     # End creation of contacts
+
+    ClickText    Select a List View: Contacts
+    ClickText    All Contacts
