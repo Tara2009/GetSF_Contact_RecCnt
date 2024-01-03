@@ -22,8 +22,3 @@ Entering a Contacts
     Log                 Contacts Records Cout is : ${ContactCount}
     # End creation of contacts
 
-
-
-
-
-    ClickText           Clear
