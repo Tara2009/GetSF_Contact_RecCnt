@@ -19,5 +19,4 @@ Entering a Contacts
 
     # End creation of contacts
 
-    ClickText    Select a List View: Contacts
-    ClickText    All Contacts
+  
