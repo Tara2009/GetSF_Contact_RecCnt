@@ -16,7 +16,7 @@ Entering a Contacts
     ClickText              Select a List View: Contacts
     ClickText              All Contacts
     UseTable               //table[@class\='slds-table forceRecordLayout slds-table--header-fixed slds-table--edit slds-table--bordered resizable-cols slds-table--resizable-cols uiVirtualDataTable']
-    ${ContactCount}=       GetTableRow        //last        skip_header=True 
+    ${ContactCount}=       GetTableRow        //last        skip_header=True         delay=20s
     Log                    Contacts Records Cout is : ${ContactCount}
     # End creation of contacts
 
