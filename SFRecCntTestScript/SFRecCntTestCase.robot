@@ -17,7 +17,8 @@ Entering a Contacts
     ClickText           All Contacts
     #UseTable            xpath\=//table[@class\='slds-table forceRecordLayout slds-table--header-fixed slds-table--edit slds-table--bordered resizable-cols slds-table--resizable-cols uiVirtualDataTable']
     #TypeText            Search this list...         jai\n     delay=2s
-    UseTable            xpath\=//table[@class\='slds-table forceRecordLayout slds-table--header-fixed slds-table--edit slds-table--bordered resizable-cols slds-table--resizable-cols uiVirtualDataTable']
+    #UseTable            xpath\=//table[@class\='slds-table forceRecordLayout slds-table--header-fixed slds-table--edit slds-table--bordered resizable-cols slds-table--resizable-cols uiVirtualDataTable']
+    UseTable            xpath\=//table[contains(@class,'slds-table forceRecordLayout')]
     Sleep               60s
     ${ContactCount}=    GetTableRow                 //last    skip_header=True    delay=40s
     Sleep              30s
