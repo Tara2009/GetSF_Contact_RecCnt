@@ -22,7 +22,8 @@ Entering a Contacts
     UseTable            xpath\=//table[contains(@class,'slds-table forceRecordLayout')]
     Sleep               60s
    # ExecuteJavascript   windows.scrollTo(0,1500)
-    #Scroll Element Into View     xpath://table[contains(@class,'slds-table forceRecordLayout')]           
+    #Scroll Element Into View     xpath://table[contains(@class,'slds-table forceRecordLayout')] 
+    Execute Javascript        window.scrollTo(0,document.body.scrollHeight)          
     ${ContactCount}=    GetTableRow                 //last    skip_header=True    delay=40s
     Sleep              30s
     Log                 Contacts Records Cout is : ${ContactCount}
